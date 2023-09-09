@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="DreamPoeBot.DreamPoe.ProcessSelectorWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:lex="http://wpflocalizeextension.codeplex.com" xmlns:exile="clr-namespace:DreamPoeBot.DreamPoe" xmlns:extensions="clr-namespace:DreamPoeBot.WPFLocalizeExtension.Extensions" Loaded="method_1">
+  <Grid>
+    <ListBox Name="ProcessesListBox" BorderBrush="#576573" BorderThickness="1" HorizontalAlignment="Left, Stretch" Margin="10,31,10,40" VerticalAlignment="Top, Stretch" SelectionChanged="listBox_0_SelectionChanged" MouseDoubleClick="listBox_0_MouseDoubleClick" />
+    <Button Name="SelectButton" MinWidth="75" Width="Auto" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Content="Choose Process" Click="button_0_Click" />
+    <Button Name="RefreshButton" MinWidth="75" Width="Auto" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Content="Refresh Process" Click="button_1_Click" />
+    <Button Name="ActivateButton" MinWidth="75" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Content="Focus Process" Click="button_2_Click" />
+    <Label HorizontalAlignment="Left, Stretch" Margin="10,0,10,124" VerticalAlignment="Top,Stretch" Width="Auto" Height="Auto" Content="{extensions:Loc SelectProcess}" />
+  </Grid>
+</UserControl>

@@ -1,0 +1,23 @@
+Id,BaseItemTypesKey,Unknown0,Unknown1,Unknown2,Unknown3,Unknown4,Unknown5,Unknown6,Unknown7,Unknown8,Unknown9
+Metadata/Items/Currency/Mushrune1,"<9102, 0>",50,45,0,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune2,"<9103, 0>",140,45,1,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune3,"<9104, 0>",234,45,2,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune4,"<9105, 0>",327,45,3,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune5,"<9106, 0>",419,45,4,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune6,"<9107, 0>",511,45,5,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune6b,"<9108, 0>",605,45,6,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune7,"<9109, 0>",97,126,7,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune8,"<9110, 0>",188,126,8,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune9,"<9111, 0>",280,126,9,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune10,"<9112, 0>",373,126,10,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune11,"<9113, 0>",466,126,11,1,1,60,True,False,False,False
+Metadata/Items/Currency/Mushrune12,"<9114, 0>",559,126,12,1,1,60,False,False,False,False
+CraftingItem,"<null, null>",364,230,13,2,4,59,False,True,False,False
+CraftingInputs1,"<null, null>",498,230,15,1,1,68,False,False,True,False
+CraftingInputs2,"<null, null>",498,314,16,1,1,68,False,False,True,False
+CraftingInputs3,"<null, null>",498,398,17,1,1,68,False,False,True,False
+BlightedMapSlots,"<null, null>",52,555,18,60,1,56,False,False,False,False
+CraftingInputCorrupt,"<null, null>",574,282,78,1,1,68,False,False,True,True
+Metadata/Items/Currency/MushruneCorrupt,"<9100, 0>",732,45,79,1,1,60,False,False,False,False
+Metadata/Items/Currency/CurrencyExtractOil,"<9921, 0>",827,45,80,1,1,60,False,False,False,False
+Metadata/Items/Currency/MushruneMirror,"<9101, 0>",781,130,81,1,1,60,False,False,False,False

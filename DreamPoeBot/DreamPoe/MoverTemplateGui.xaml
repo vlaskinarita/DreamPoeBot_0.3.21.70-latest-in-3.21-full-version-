@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="DreamPoeBot.DreamPoe.MoverTemplateGui" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:DreamPoeBot.DreamPoe">
+  <Grid>
+    <GroupBox Padding="5" HorizontalAlignment="Left, Stretch" VerticalAlignment="Top, Stretch">
+      <HeaderedContentControl.Header>
+        <WrapPanel>
+          <CheckBox Name="MoverTemplateGuiMoverActiveCheckBox" IsEnabled="False" VerticalAlignment="Center">Active</CheckBox>
+          <Label VerticalAlignment="Center" Content="|" />
+          <TextBlock Name="MoverTemplateGuiMoverGuideTextBlock">
+            <Hyperlink Name="MoverTemplateGuiMoverGuideHyperlink" BaselineAlignment="Center" Click="hyperlink_0_Click">Guide</Hyperlink> <Label VerticalAlignment="Center" Content="|" /></TextBlock>
+          <Label VerticalAlignment="Center" Content="Author: " />
+          <Label Name="MoverTemplateGuiMoverAuthorLabel" VerticalAlignment="Center" Content="" />
+          <Label VerticalAlignment="Center" Content="|" />
+          <Label VerticalAlignment="Center" Content="Version: " />
+          <Label Name="MoverTemplateGuiMoverVersionLabel" VerticalAlignment="Center" Content="" />
+          <Label VerticalAlignment="Center" Content="|" />
+          <Label VerticalAlignment="Center" Content="Description: " />
+          <Label Name="MoverTemplateGuiMoverDescriptionLabel" VerticalAlignment="Center" Content="" />
+        </WrapPanel>
+      </HeaderedContentControl.Header>
+      <UserControl Name="MoverTemplateGuiContentUserControl" HorizontalAlignment="Left, Stretch" VerticalAlignment="Top, Stretch" IsEnabled="{Binding ElementName=MoverTemplateGuiMoverActiveCheckBox, Path=IsChecked}" />
+    </GroupBox>
+  </Grid>
+</UserControl>

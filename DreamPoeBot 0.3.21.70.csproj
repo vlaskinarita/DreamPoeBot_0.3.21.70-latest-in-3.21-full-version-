@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>DreamPoeBot</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="exe\**" />
+    <EmbeddedResource Remove="exe\**" />
+    <None Remove="exe\**" />
+    <Page Remove="exe\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="images\key.png" />
+    <None Remove="resources\statdescription.csv" />
+    <None Remove="images\icon.ico" />
+    <None Remove="resources\currencystashtablayout.csv" />
+    <None Remove="resources\fragmentstashtablayout.csv" />
+    <None Remove="resources\blightstashtablayout.csv" />
+    <EmbeddedResource Include="images\key.png" LogicalName="images/key.png" />
+    <EmbeddedResource Include="resources\statdescription.csv" LogicalName="resources/statdescription.csv" />
+    <EmbeddedResource Include="images\icon.ico" LogicalName="images/icon.ico" />
+    <EmbeddedResource Include="resources\currencystashtablayout.csv" LogicalName="resources/currencystashtablayout.csv" />
+    <EmbeddedResource Include="resources\fragmentstashtablayout.csv" LogicalName="resources/fragmentstashtablayout.csv" />
+    <EmbeddedResource Include="resources\blightstashtablayout.csv" LogicalName="resources/blightstashtablayout.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Core" />
+    <Reference Include="log4net" />
+    <Reference Include="System.Management" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="SharpDX.Mathematics" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="Microsoft.Scripting" />
+    <Reference Include="IronPython" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" />
+    <Reference Include="System.IO.Compression">
+      <HintPath>..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\System.IO.Compression\v4.0_4.0.0.0__b77a5c561934e089\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="MahApps.Metro" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+</Project>

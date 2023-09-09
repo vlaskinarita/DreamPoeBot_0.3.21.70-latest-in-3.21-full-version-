@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dreampoe:NewSettingsWindow xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls" xmlns:lex="http://wpflocalizeextension.codeplex.com" xmlns:settingsPath="clr-namespace:DreamPoeBot.Loki;assembly=DreamPoeBot" xmlns:exile="clr-namespace:DreamPoeBot" xmlns:controls1="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" xmlns:extensions="clr-namespace:DreamPoeBot.WPFLocalizeExtension.Extensions" controls1:MetroWindow.ShowMinButton="False" Window.Title="Settings" xmlns:dreampoe="clr-namespace:DreamPoeBot.DreamPoe">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="250" />
+      <ColumnDefinition Width="2" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <TreeView Name="NewSettingsTreeView" Grid.Column="0" HorizontalAlignment="Left, Stretch" VerticalAlignment="Top, Stretch">
+      <!--Unknown connection ID: 2-->
+    </TreeView>
+    <GridSplitter Name="NewSettingsGridSplitter" Grid.Column="1" Width="2" HorizontalAlignment="Stretch">
+      <!--Unknown connection ID: 3-->
+    </GridSplitter>
+    <UserControl Name="NewSettingsContentUserControl" Grid.Column="2">
+      <!--Unknown connection ID: 4-->
+    </UserControl>
+  </Grid>
+  <!--Unknown connection ID: 1-->
+</dreampoe:NewSettingsWindow>

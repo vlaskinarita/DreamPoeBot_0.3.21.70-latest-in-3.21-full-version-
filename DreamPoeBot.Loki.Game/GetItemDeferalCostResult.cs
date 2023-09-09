@@ -1,0 +1,17 @@
+namespace DreamPoeBot.Loki.Game;
+
+public enum GetItemDeferalCostResult
+{
+	None,
+	GetItemByIdFailed,
+	ItemIsDivinationCardType,
+	CouldNotFindControlForItem,
+	NoTooltip,
+	CostTextNotFound,
+	InternalError1,
+	InternalError2,
+	InternalError3,
+	InternalError4,
+	HiddenItem,
+	DeferNotActive
+}

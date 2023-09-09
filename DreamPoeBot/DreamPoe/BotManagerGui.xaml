@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="DreamPoeBot.DreamPoe.BotManagerGui" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:DreamPoeBot.DreamPoe">
+  <Grid>
+    <GroupBox HorizontalAlignment="Left, Stretch" VerticalAlignment="Top" Margin="10,10,10,0" Height="69" Header="Bots">
+      <Grid>
+        <ComboBox Name="BotsComboBox" IsEnabled="True" HorizontalAlignment="Left, Stretch" VerticalAlignment="Top" SelectionChanged="comboBox_0_SelectionChanged" />
+      </Grid>
+    </GroupBox>
+  </Grid>
+</UserControl>

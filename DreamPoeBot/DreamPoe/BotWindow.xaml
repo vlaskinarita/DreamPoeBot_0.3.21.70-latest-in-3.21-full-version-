@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="DreamPoeBot.DreamPoe.BotWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls" xmlns:lex="http://wpflocalizeextension.codeplex.com" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks" xmlns:dreampoebot="clr-namespace:DreamPoeBot" xmlns:extensions="clr-namespace:DreamPoeBot.WPFLocalizeExtension.Extensions" xmlns:dreampoe="clr-namespace:DreamPoeBot.DreamPoe" Loaded="method_2">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Name="TopRowDefinition" />
+      <RowDefinition Name="SplitterRowDefinition" Height="Auto" />
+      <RowDefinition Name="BottomRowDefinition" />
+    </Grid.RowDefinitions>
+    <GridSplitter Name="GridSplitter" Background="#FF000000" ResizeDirection="Rows" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ResizeBehavior="PreviousAndNext" Height="2" />
+    <WrapPanel Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+      <Label Content="Log Level:" Margin="10,4,0,0" FontSize="12" HorizontalAlignment="left" />
+      <ComboBox Name="LogLevelComboBox" HorizontalAlignment="left" Height="20" Margin="0,5,3,0" SelectedValuePath="Content" ToolTip="Select the desired verbosity of the log, for support only provide Full logs." SelectionChanged="LogLevelComboBox_SelectionChanged">
+        <ComboBoxItem Content="Full" />
+        <ComboBoxItem Content="Warn" />
+        <ComboBoxItem Content="None" />
+      </ComboBox>
+      <TextBox Name="TextboxLogFileName" HorizontalAlignment="Stretch" Margin="5,5,10,0" Height="20" IsReadOnly="True">
+        <FrameworkElement.ContextMenu>
+          <ContextMenu>
+            <MenuItem Name="CopyNameToClipboardButton" Header="{extensions:BLoc Loki.Globalization:Localization:LogCopy}" Click="menuItem_0_Click" />
+            <MenuItem Name="ZipButton" Header="{extensions:BLoc Loki.Globalization:Localization:LogZip}" Click="menuItem_1_Click" />
+          </ContextMenu>
+        </FrameworkElement.ContextMenu>
+      </TextBox>
+    </WrapPanel>
+    <ScrollViewer Name="ScrollLog" Grid.Row="2" VerticalScrollBarVisibility="Visible" Margin="10,36,0,10" VerticalAlignment="Top, Stretch" HorizontalAlignment="Left, Stretch" Height="Auto">
+      <RichTextBox Name="LogRichTextBox" UndoLimit="0" IsUndoEnabled="False" BorderThickness="0" IsReadOnly="True" IsEnabled="True">
+        <FrameworkElement.Resources>
+          <ResourceDictionary>
+            <Style x:Key="{x:Type Paragraph}" TargetType="{x:Type Paragraph}">
+              <Setter Property="Block.Margin" Value="0" />
+            </Style>
+          </ResourceDictionary>
+        </FrameworkElement.Resources>
+        <FrameworkElement.ContextMenu>
+          <ContextMenu>
+            <MenuItem Command="ApplicationCommands.Cut" />
+            <MenuItem Command="ApplicationCommands.Copy" />
+            <MenuItem Command="ApplicationCommands.Paste" />
+            <Separator />
+            <MenuItem Name="ClearLogButton" Header="{extensions:BLoc Loki.Globalization:Localization:LogClear}" Click="menuItem_2_Click" />
+          </ContextMenu>
+        </FrameworkElement.ContextMenu>
+      </RichTextBox>
+    </ScrollViewer>
+    <Grid Row="0">
+      <ComboBox Name="BotsComboBox" IsEnabled="False" HorizontalAlignment="Left, Stretch" VerticalAlignment="Top" Margin="74,10,10,0" SelectionChanged="comboBox_0_SelectionChanged" />
+      <ComboBox Name="RoutinesComboBox" IsEnabled="False" HorizontalAlignment="Left, Stretch" VerticalAlignment="Top" Margin="74,45,10,0" SelectionChanged="comboBox_1_SelectionChanged" />
+      <Button Name="StartStopButton" MinWidth="125" MaxWidth="125" Height="28" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,40,10" IsEnabled="False" Content="Start" Click="button_0_Click" />
+      <Button Name="ForceStopButton" Content="X" MinWidth="25" MaxWidth="25" Height="28" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" IsEnabled="False" Click="button_1_Click" />
+      <controls1:ToggleSwitch FrameworkElement.Name="RenderSwitch" HeaderedContentControl.Header="Render" xmlns:controls1="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" controls1:ToggleSwitch.OffLabel="Off" controls1:ToggleSwitch.OnLabel="On" FrameworkElement.HorizontalAlignment="Left" FrameworkElement.VerticalAlignment="Bottom" FrameworkElement.Margin="10,10,10,10" FrameworkElement.ToolTip="Toggle the Game rendering on and off, to control the FPS during render off, select Settings-&gt;Program-&gt;Global-&gt;Activate Bg Fps, and select the target Background Fps" Click="ToggleSwitch_OnClick" />
+      <Image HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="40" Height="40" Source="/Images/Icon.ico" ToolTipService.ToolTip="DreamPoeBot" />
+    </Grid>
+  </Grid>
+</UserControl>

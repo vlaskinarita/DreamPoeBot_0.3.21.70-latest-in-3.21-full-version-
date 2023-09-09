@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<local:MainWindow xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" xmlns:lex="http://wpflocalizeextension.codeplex.com" xmlns:local="clr-namespace:DreamPoeBot.DreamPoe" xmlns:engine="clr-namespace:DreamPoeBot.WPFLocalizeExtension.Engine" xmlns:providers="clr-namespace:DreamPoeBot.WPFLocalizeExtension.Providers" xmlns:extensions="clr-namespace:DreamPoeBot.WPFLocalizeExtension.Extensions" engine:LocalizeDictionary.DesignCulture="en" providers:ResxLocalizationProvider.DefaultAssembly="Loki.Globalization" providers:ResxLocalizationProvider.DefaultDictionary="Localization" Window.Title="" FrameworkElement.Height="480" FrameworkElement.Width="640" Window.WindowStartupLocation="CenterScreen">
+  <UIElement.CommandBindings>
+    <CommandBinding Command="{x:Static local:MainWindow.ChangeLanguageToInvariant}">
+      <!--Unknown connection ID: 2-->
+    </CommandBinding>
+    <CommandBinding Command="{x:Static local:MainWindow.ChangeLanguageToEn}">
+      <!--Unknown connection ID: 3-->
+    </CommandBinding>
+    <CommandBinding Command="{x:Static local:MainWindow.ChangeLanguageToRu}">
+      <!--Unknown connection ID: 4-->
+    </CommandBinding>
+    <CommandBinding Command="{x:Static local:MainWindow.ChangeLanguageToDe}">
+      <!--Unknown connection ID: 5-->
+    </CommandBinding>
+    <CommandBinding Command="{x:Static local:MainWindow.ChangeLanguageToFr}">
+      <!--Unknown connection ID: 6-->
+    </CommandBinding>
+    <CommandBinding Command="{x:Static local:MainWindow.ChangeLanguageToEs}">
+      <!--Unknown connection ID: 7-->
+    </CommandBinding>
+    <CommandBinding Command="{x:Static local:MainWindow.ChangeLanguageToZhCn}">
+      <!--Unknown connection ID: 8-->
+    </CommandBinding>
+    <CommandBinding Command="{x:Static local:MainWindow.OpenSettingsWindow}">
+      <!--Unknown connection ID: 9-->
+    </CommandBinding>
+  </UIElement.CommandBindings>
+  <DockPanel Width="Auto" Height="Auto" VerticalAlignment="Top, Stretch" HorizontalAlignment="Left, Stretch" LastChildFill="True">
+    <StatusBar Height="32" DockPanel.Dock="Bottom" Width="Auto" HorizontalAlignment="Left, Stretch" VerticalAlignment="Top, Stretch">
+      <StatusBarItem HorizontalAlignment="Left">
+        <Label Name="StatusBarLeftLabel" Content="">
+          <!--Unknown connection ID: 10-->
+        </Label>
+      </StatusBarItem>
+      <StatusBarItem HorizontalAlignment="Right">
+        <Label Name="StatusBarRightLabel" Content="">
+          <!--Unknown connection ID: 11-->
+        </Label>
+      </StatusBarItem>
+    </StatusBar>
+    <Controls:TransitioningContentControl FrameworkElement.Name="transitioningContentControl_0" FrameworkElement.Width="Auto" FrameworkElement.Height="Auto" Controls:TransitioningContentControl.Transition="Left" FrameworkElement.VerticalAlignment="Top, Stretch" FrameworkElement.HorizontalAlignment="Left, Stretch" Control.VerticalContentAlignment="Center">
+      <!--Unknown connection ID: 12-->
+    </Controls:TransitioningContentControl>
+  </DockPanel>
+  <Controls:MetroWindow.LeftWindowCommands>
+    <Controls:WindowCommands>
+      <Button Name="TitleButton" IsHitTestVisible="False" Content="DreamPoeBot">
+        <!--Unknown connection ID: 13-->
+      </Button>
+      <Button Name="ProcessButton" Content="PID: 0">
+        <!--Unknown connection ID: 14-->
+      </Button>
+      <Button Name="TimeLeftButton" Content="TimeLeft: " IsHitTestVisible="False">
+        <!--Unknown connection ID: 15-->
+      </Button>
+    </Controls:WindowCommands>
+  </Controls:MetroWindow.LeftWindowCommands>
+  <Controls:MetroWindow.RightWindowCommands>
+    <Controls:WindowCommands>
+      <Button Name="SettingsButton" Content="Settings">
+        <!--Unknown connection ID: 16-->
+      </Button>
+    </Controls:WindowCommands>
+  </Controls:MetroWindow.RightWindowCommands>
+  <!--Unknown connection ID: 1-->
+</local:MainWindow>

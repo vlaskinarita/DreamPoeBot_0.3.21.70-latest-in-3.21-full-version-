@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DreamPoeBot 0.3.21.70", "DreamPoeBot 0.3.21.70.csproj", "{65D84306-0E3A-47A7-AA7E-96BC1E637275}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65D84306-0E3A-47A7-AA7E-96BC1E637275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D84306-0E3A-47A7-AA7E-96BC1E637275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D84306-0E3A-47A7-AA7E-96BC1E637275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D84306-0E3A-47A7-AA7E-96BC1E637275}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F74A884-5EEF-4317-8529-31229AFA245F}
+	EndGlobalSection
+EndGlobal
